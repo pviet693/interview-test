@@ -1,0 +1,40 @@
+.title {
+    color: rgba(159, 216, 255, 0.36);
+}
+
+.textarea {
+    width: 100%;
+    background-color: rgba(159, 216, 255, 0.24);
+    color: inherit;
+    border-radius: 5px;
+    border: unset;
+    outline: unset;
+    padding: 15px;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+@media screen and ($lg) {
+    .textarea {
+        width: 100%;
+        // max-width: 500px;
+    }
+}
+
+@media screen and ($md) {
+    .textarea {
+        width: 100%;
+        // max-width: 400px;
+        padding: 8px;
+    }
+}
+
+@media screen and ($sm) {
+    .textarea {
+        width: 100%;
+        // max-width: 400px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,54 @@
+.title {
+    color: rgba(159, 216, 255, 0.36);
+}
+
+.input__container {
+    height: 46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(159, 216, 255, 0.24);
+    border-radius: 5px;
+    padding: 15px;
+
+    input {
+        background-color: transparent;
+        border: unset;
+        outline: unset;
+        color: inherit;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    .action {
+        border-bottom: 2px solid;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+@media screen and ($lg) {
+    .input__container {
+        height: 46px;
+        padding: 12px;
+        // max-width: 500px;
+    }
+}
+
+@media screen and ($md) {
+    .input__container {
+        height: 40px;
+        padding: 12px;
+        // max-width: 400px;
+    }
+}
+
+@media screen and ($sm) {
+    .input__container {
+        height: 36px;
+        padding: 8px;
+    }
+}

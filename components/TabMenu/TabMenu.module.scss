@@ -1,0 +1,147 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0;
+
+    .tab-menu {
+        flex-basis: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        cursor: pointer;
+        user-select: none;
+
+        img {
+            margin-right: 0.6em;
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
+    }
+
+    .tab-active {
+        border-bottom: 3px solid;
+        transition: 0.5s;
+
+        & .tab-active__name {
+            font-weight: bold;
+        }
+    }
+
+    .tab-inactive {
+        border-bottom: unset;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and ($lg) {
+    
+}
+
+@media screen and ($md) {
+    .container {
+        height: 50px;
+        padding: 0;
+        font-size: 14px;
+
+        .tab-menu {
+            flex-basis: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            cursor: pointer;
+            user-select: none;
+
+            &:nth-child(2) {
+                flex-basis: 40%;
+            }
+
+            &:nth-child(3) {
+                flex-basis: 30%;
+            }
+
+            img {
+                margin-right: 0.6em;
+                width: 18px;
+                height: 18px;
+                object-fit: cover;
+            }
+        }
+
+        .tab-active {
+            border-bottom: 3px solid;
+            transition: 0.5s;
+
+            & .tab-active__name {
+                font-weight: bold;
+            }
+        }
+
+        .tab-inactive {
+            border-bottom: unset;
+            opacity: 0.8;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and ($sm) {
+    .container {
+        height: 40px;
+        padding: 0;
+        font-size: 12px;
+
+        .tab-menu {
+            flex-basis: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            cursor: pointer;
+            user-select: none;
+
+            &:nth-child(2) {
+                flex-basis: 40%;
+            }
+
+            &:nth-child(3) {
+                flex-basis: 25%;
+            }
+
+            img {
+                margin-right: 0.6em;
+                width: 15px;
+                height: 15px;
+                object-fit: cover;
+            }
+        }
+
+        .tab-active {
+            border-bottom: 3px solid;
+            transition: 0.5s;
+
+            & .tab-active__name {
+                font-weight: bold;
+            }
+        }
+
+        .tab-inactive {
+            border-bottom: unset;
+            opacity: 0.8;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

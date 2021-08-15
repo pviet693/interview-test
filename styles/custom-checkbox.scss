@@ -1,0 +1,39 @@
+$color: #3E5171;
+
+.custom-checkbox-primereact {
+    margin: 0;
+    padding: 0;
+    margin-top: -2px;
+
+    .p-checkbox {
+        .p-checkbox-box {
+            border-color: $color !important;
+            background: $color !important;
+
+            .p-checkbox-icon {
+                color: $primary-color;
+            }
+        }
+
+        .p-checkbox-box.p-highlight {
+            border-color: $color !important;
+            background: $color !important;
+        }
+
+        &:not(.p-checkbox-disabled) {
+            .p-checkbox-box.p-highlight:hover {
+                border-color: $color !important;
+                background: $color !important;
+            }
+
+            .p-checkbox-box:hover {
+                border-color: $color !important;
+            }
+
+            .p-checkbox-box.p-focus {
+                box-shadow: 0 0 0 0.2rem $color !important;
+                border-color: $color !important;
+            }
+        }
+    }
+}

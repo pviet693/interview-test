@@ -1,0 +1,153 @@
+.custom-dropdown-primereact {
+    width: 100%;
+
+    .p-dropdown {
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        background: rgba(159, 216, 255, 0.24);
+        padding: 5px;
+
+        .p-dropdown-trigger {
+            color: $primary-color;
+        }
+
+        .p-inputtext {
+            color: $primary-color;
+        }
+    }
+}
+
+.custom-dropdown-horizontal-select {
+    width: 100%;
+    margin-left: 25px;
+
+    .p-dropdown {
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        background: transparent;
+
+        .p-dropdown-trigger {
+            color: $primary-color;
+            width: auto;
+        }
+
+        .p-inputtext {
+            color: $primary-color;
+        }
+
+        &:not(.p-disables).p-focus {
+            border: unset;
+            outline: unset;
+            box-shadow: unset;
+        }
+    }
+}
+
+@media screen and ($lg) {
+}
+
+@media screen and ($md) {
+    .custom-dropdown-primereact {
+        width: 100%;
+        // max-width: 400px;
+
+        .p-dropdown {
+            height: 40px;
+            padding: 5px;
+
+            .p-dropdown-trigger {
+                color: $primary-color;
+
+                .pi {
+                    font-size: 14px;
+                }
+            }
+
+            .p-inputtext {
+                color: $primary-color;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .custom-dropdown-horizontal-select {
+        width: 100%;
+        margin-left: 25px;
+        // max-width: 400px;
+
+        .p-dropdown {
+            border-radius: 5px;
+            height: 40px;
+
+            .p-dropdown-trigger {
+                color: $primary-color;
+                width: auto;
+
+                .pi {
+                    font-size: 14px;
+                }
+            }
+
+            .p-inputtext {
+                color: $primary-color;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and ($sm) {
+    .custom-dropdown-primereact {
+        width: 100%;
+
+        .p-dropdown {
+            height: 36px;
+            padding: 3px;
+
+            .p-dropdown-trigger {
+                color: $primary-color;
+
+                .pi {
+                    font-size: 12px;
+                }
+            }
+
+            .p-inputtext {
+                color: $primary-color;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .custom-dropdown-horizontal-select {
+        width: 100%;
+        margin-left: 25px;
+
+        .p-dropdown {
+            border-radius: 5px;
+            height: 36px;
+
+            .p-dropdown-trigger {
+                color: $primary-color;
+                width: auto;
+
+                .pi {
+                    font-size: 12px;
+                }
+            }
+
+            .p-inputtext {
+                color: $primary-color;
+                font-size: 12px;
+            }
+        }
+    }
+}
